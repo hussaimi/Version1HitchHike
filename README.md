@@ -1,1 +1,3 @@
 # hitchHike
+Summary: 
+  HitchHike will allow users to search for other people to carpool with, especially for long travel. For example, a user traveling from Cincinnati to Columbus could post the details of their travel (dates, origin, destination, etc.) and whether they would be willing to split the price for fuel, drive part of the way there, etc. Similarly, a user driving there could reach out to them through their post or make a post of their own with their details of travel and whether they are looking for someone to split the cost of fuel or drive part of the way. HitchHike will also provide an excellent platform to connect travelers to events where drivers can post their reasons for travel such as sports competitions or concerts
