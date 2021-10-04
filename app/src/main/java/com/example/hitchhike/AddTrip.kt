@@ -11,6 +11,7 @@ import java.util.*
 
 class AddTrip : AppCompatActivity() {
 
+
     val cal: Calendar by lazy { Calendar.getInstance() }
     private val textViewDate: TextView by lazy { findViewById(R.id.textViewDate) }
     private val textViewTime: TextView by lazy { findViewById(R.id.textViewTime) }
@@ -78,6 +79,6 @@ class AddTrip : AppCompatActivity() {
     private fun updateDateInView() {
         val myFormat = "MM/dd/yyyy" // mention the format you need
         val sdf = SimpleDateFormat(myFormat, Locale.US)
-        textViewDate!!.text = sdf.format(cal.getTime())
+        textViewDate.text = sdf.format(cal.getTime())
     }
 }
