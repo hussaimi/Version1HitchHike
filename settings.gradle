@@ -1,0 +1,2 @@
+rootProject.name = "HitchHike"
+include ':app'
