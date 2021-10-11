@@ -15,6 +15,7 @@
     <string name="time">Time:</string>
     <string name="description">Description:</string>
     <string name="no_of_people">No. of People:</string>
+    <string name="userType">User Type:</string>
     <string name="save">Save</string>
     <string name="hint_pick_up_date">dd/mm/yyyy</string>
     <string name="hint_pick_up_time">hh:mm</string>

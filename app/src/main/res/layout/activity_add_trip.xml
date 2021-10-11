@@ -163,6 +163,42 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                android:text="@string/userType"
+                android:textColor="#040303"
+                android:textSize="17sp" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:text="Driver"
+                android:id="@+id/radioBtnDriver"
+                android:onClick="onRadioButtonClicked"
+                android:ems="10" />
+
+            <RadioButton
+                android:id="@+id/radioBtnRider"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30"
+                android:checked="false"
+                android:ems="10"
+                android:onClick="onRadioButtonClicked"
+                android:text="Rider" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal" >
 
             <View

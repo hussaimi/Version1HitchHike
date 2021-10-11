@@ -15,6 +15,36 @@ class AddTrip : AppCompatActivity() {
     val cal: Calendar by lazy { Calendar.getInstance() }
     private val textViewDate: TextView by lazy { findViewById(R.id.textViewDate) }
     private val textViewTime: TextView by lazy { findViewById(R.id.textViewTime) }
+    private val radioButtonDriver: RadioButton by lazy { findViewById(R.id.radioBtnDriver) }
+    private val radioButtonRider: RadioButton by lazy { findViewById(R.id.radioBtnRider) }
+    var userType: String? = null
+
+    fun onRadioButtonClicked(view: View){
+        if (view is RadioButton) {
+            // Is the button now checked?
+            val checked = view.isChecked
+
+            // Check which radio button was clicked
+            when (view.getId()) {
+                radioButtonDriver.id ->
+                    if (checked) {
+                        radioButtonRider.isChecked = false
+                        userType = "Driver"
+                        Toast.makeText(this@AddTrip,
+                            "Selected Item:" + " " +
+                                    "" + userType, Toast.LENGTH_SHORT).show()
+                    }
+                radioButtonRider.id ->
+                    if (checked) {
+                        radioButtonDriver.isChecked = false
+                        userType = "Rider"
+                        Toast.makeText(this@AddTrip,
+                            "Selected Item:" + " " +
+                                    "" + userType, Toast.LENGTH_SHORT).show()
+                    }
+            }
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
